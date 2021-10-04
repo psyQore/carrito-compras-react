@@ -25,7 +25,7 @@ class Cart extends Component {
             <BubbleAlert value={10}/>
         </span>
         <button style={styles.button}>
-            Carro
+            Cart
         </button>
       </div>
     );
