@@ -1,9 +1,9 @@
 import { Component } from "react";
-import Products from './components/Products';
+import Products from "./components/Products";
 
-import Tomate from './assets/products-img/tomate.jpg'
-import Lechuga from './assets/products-img/lechuga.jpg'
-import Arvejas from './assets/products-img/arvejas.jpg'
+import Tomate from "./assets/products-img/tomate.jpg";
+import Lechuga from "./assets/products-img/lechuga.jpg";
+import Arvejas from "./assets/products-img/arvejas.jpg";
 
 class App extends Component {
   state = {
@@ -16,11 +16,11 @@ class App extends Component {
 
   render() {
     return (
-      <Products 
+      <Products
         addToCart={() => console.log("Click")}
         products={this.state.products}
       />
-    )
+    );
   }
 }
 
