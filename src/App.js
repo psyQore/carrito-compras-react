@@ -1,5 +1,6 @@
 import { Component } from "react";
-import "./App.css";
+import Products from './components/Products';
+
 import Tomate from './assets/products-img/tomate.jpg'
 import Lechuga from './assets/products-img/lechuga.jpg'
 import Arvejas from './assets/products-img/arvejas.jpg'
@@ -14,7 +15,12 @@ class App extends Component {
   };
 
   render() {
-    return <p>Hello World</p>;
+    return (
+      <Products 
+        addToCart={() => console.log("Click")}
+        products={this.state.products}
+      />
+    )
   }
 }
 
